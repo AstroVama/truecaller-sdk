@@ -58,6 +58,14 @@ def sdkVariant = "flutter"
 def sdkVariantVersion = "0.1.2"
 
 android {
+    java {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
     compileSdkVersion 28
 
     sourceSets {
